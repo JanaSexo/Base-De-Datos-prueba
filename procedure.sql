@@ -13,9 +13,6 @@ BEGIN
                              ' | Autor: ' || libro_rec.autor);
     END LOOP;
 
-EXCEPTION
-    WHEN OTHERS THEN
-        dbms_output.put_line('Error al listar libros: ' || SQLERRM);
 END;
 
 EXEC listaLibros;
